@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Hirede/Logging/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Hirede/Logging</projectUrl>
+    <iconUrl>http://pt.hirede.com/Images/icon_hirede.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright Baza Network 2015</copyright>
+    <tags>Logging LAB</tags>
+    <summary>为八爪网络各类应用程序提供基础日志功能。</summary>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Common" version="6.0.1304.0" />
+      <dependency id="EnterpriseLibrary.Logging" version="6.0.1304.0" />
+      <dependency id="Microsoft.Framework.Configuration.Abstractions" version="1.0.0-beta6" />
+      <dependency id="Microsoft.Framework.DependencyInjection.Abstractions" version="1.0.0-beta6" />
+      <dependency id="Microsoft.Framework.Logging.Abstractions" version="1.0.0-beta6" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Baza.Infrastructure.Logging.EnterpriseLibrary.dll" target="lib\net46" />
+    <file src="bin\Release\Baza.Infrastructure.Logging.EnterpriseLibrary.pdb" target="lib\net46" />
+  </files>
+</package>
