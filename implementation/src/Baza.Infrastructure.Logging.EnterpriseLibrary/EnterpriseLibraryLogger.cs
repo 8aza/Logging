@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace Baza.Infrastructure.Logging.EnterpriseLibrary
 {
-    public class EnterpriseLibraryLogger : ILogger
+    public class EnterpriseLibraryLogger : ILogger, IDisposable
     {
         LogWriter m_LogWriter;
         public EnterpriseLibraryLogger()
@@ -66,6 +66,11 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary
                 default:
                     throw new ArgumentOutOfRangeException("level");
             }
+        }
+
+        public void Dispose()
+        {
+            m_LogWriter.Dispose();
         }
     }
 }

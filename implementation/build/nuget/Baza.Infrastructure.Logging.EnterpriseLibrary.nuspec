@@ -17,9 +17,9 @@
     <dependencies>
       <dependency id="EnterpriseLibrary.Common" version="6.0.1304.0" />
       <dependency id="EnterpriseLibrary.Logging" version="6.0.1304.0" />
-      <dependency id="Microsoft.Framework.Configuration.Abstractions" version="1.0.0-beta6" />
-      <dependency id="Microsoft.Framework.DependencyInjection.Abstractions" version="1.0.0-beta6" />
-      <dependency id="Microsoft.Framework.Logging.Abstractions" version="1.0.0-beta6" />
+      <dependency id="Microsoft.Framework.Configuration.Abstractions" version="1.0.0-beta7" />
+      <dependency id="Microsoft.Framework.DependencyInjection.Abstractions" version="1.0.0-beta7" />
+      <dependency id="Microsoft.Framework.Logging.Abstractions" version="1.0.0-beta7" />
     </dependencies>
   </metadata>
   <files>
