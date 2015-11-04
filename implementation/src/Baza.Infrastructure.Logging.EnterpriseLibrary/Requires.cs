@@ -10,5 +10,11 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary
             if (value == null)
                 throw new ArgumentNullException(parameterName);
         }
+
+        public static void NotNullOrEmpty(string value, string parameterName)
+        {
+            if (string.IsNullOrEmpty(value))
+                throw new ArgumentException(parameterName + "不能为null或空字符串");
+        }
     }
 }

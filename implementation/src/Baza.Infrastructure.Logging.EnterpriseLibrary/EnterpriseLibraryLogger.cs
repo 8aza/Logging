@@ -8,10 +8,6 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary
     public class EnterpriseLibraryLogger : ILogger, IDisposable
     {
         LogWriter m_LogWriter;
-        public EnterpriseLibraryLogger()
-            : this(LoggingConfigurationFactory.Create(null))
-        {
-        }
 
         public EnterpriseLibraryLogger(LoggingConfiguration config)
         {

@@ -10,7 +10,7 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary
     {
         static readonly TextFormatter _SimplyFormatter = new TextFormatter("[{severity}, {timestamp(local:F)}] {message}");
 
-        public static LoggingConfiguration Create(string name)
+        public static LoggingConfiguration Create(string name, string filePath = null)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -18,7 +18,7 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary
             }
 
             // Trace Listeners
-            var listener = new RollingFlatFileTraceListener(@"Logging\" + name + ".log",
+            var listener = new RollingFlatFileTraceListener((filePath ?? "Logging") + "\\" + name + ".log",
                 header: string.Empty, footer: string.Empty, formatter: _SimplyFormatter,
                 rollFileExistsBehavior: RollFileExistsBehavior.Increment, rollInterval: RollInterval.Day, maxArchivedFiles: 30);
 
