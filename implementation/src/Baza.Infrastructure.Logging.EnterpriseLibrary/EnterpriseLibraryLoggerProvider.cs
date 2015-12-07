@@ -1,4 +1,4 @@
-﻿using Microsoft.Framework.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Microsoft.Practices.EnterpriseLibrary.Logging;
 using System;
 using System.Collections.Generic;
