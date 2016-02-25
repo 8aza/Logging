@@ -10,7 +10,7 @@ namespace Baza.Infrastructure.Logging.EnterpriseLibrary.Sample
         {
             var appName = "Sample";
             var factory = new LoggerFactory();
-            factory.AddProvider(new EnterpriseLibraryLoggerProvider());
+            factory.AddFile();
             var logger = factory.CreateLogger(appName);
             logger.LogInformation("Application Start!");
             logger.LogInformation("Hello Boy!");
